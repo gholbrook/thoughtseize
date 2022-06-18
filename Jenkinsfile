@@ -3,7 +3,7 @@ pipeline {
   stages {
   	stage('Fetch code') {
   		steps {
-  			git branch: 'main', url: 'https://github.com/gholbrook/thoughtseize.git'
+  			git branch: 'main', url: 'git@github.com:gholbrook/thoughtseize.git'
   		}
   	}
   	stage('Build') {
