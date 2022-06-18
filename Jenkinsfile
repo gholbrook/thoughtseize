@@ -1,21 +1,19 @@
 pipeline {
   agent any
   stages {
-  	stage('Fetch code') {
+  	stage("Fetch code") {
   		steps {
-  			git branch: 'main', url: 'git@github.com:gholbrook/thoughtseize.git'
+  			git branch: "main", url: "git@github.com:gholbrook/thoughtseize.git"
   		}
   	}
-  	stage('Build') {
+  	stage("Build") {
   		steps {
-  			sh 'pwd'
-  			sh 'ls'
-  			sh 'python3 -m pip install -r requirements.txt'
+  			sh "python3 -m pip install -r requirements.txt"
   		}
   	}
-  	stage('Test') {
+  	stage("Test") {
   		steps {
-  			sh 'echo Testing...'
+  			sh "echo Testing..."
   		}
   	}
   }
