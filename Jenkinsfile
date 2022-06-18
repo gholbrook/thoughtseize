@@ -8,8 +8,8 @@ pipeline {
   	}
   	stage("Build") {
   		steps {
-  			sh "sudo apt-get update"
-  			sh "sudo apt-get install python3.8"
+  			sh "apt-get update"
+  			sh "apt-get install python3.8"
   			sh "python3 -m pip install -r requirements.txt"
   		}
   	}
