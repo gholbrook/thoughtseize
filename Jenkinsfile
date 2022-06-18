@@ -8,6 +8,8 @@ pipeline {
   	}
   	stage('Build') {
   		steps {
+  			sh 'pwd'
+  			sh 'ls'
   			sh 'python3 -m pip install -r requirements.txt'
   		}
   	}
