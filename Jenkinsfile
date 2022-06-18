@@ -2,7 +2,7 @@ pipeline {
 
   agent {
   	docker {
-  		image "python"
+  		image "python:3.8.13"
   		reuseNode true
   	}
   }
