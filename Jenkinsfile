@@ -8,8 +8,7 @@ pipeline {
   	}
   	stage('Build') {
   		steps {
-  			sh 'echo Building...'
-  			sh 'python -m pip install -r requirements.txt'
+  			sh 'python3 -m pip install -r requirements.txt'
   		}
   	}
   	stage('Test') {
