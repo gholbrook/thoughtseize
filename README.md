@@ -1,6 +1,21 @@
 # thoughtseize
-Hello, world
+
 
 Activate virtual environment
 
-`python -m pip install -r requirements.txt`
+## Current Packages
+uvicorn
+
+fastapi
+
+jinja2
+
+## start webserv
+uvicorn main:app --reload
+
+## venv
+cd .\venv\Scripts\
+
+Type activate or deactivate
+
+
