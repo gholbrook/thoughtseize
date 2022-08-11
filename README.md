@@ -1,6 +1,11 @@
 # thoughtseize
-Hello, world
 
-Activate virtual environment
+## start webserv
+uvicorn main:app --reload
 
-`python -m pip install -r requirements.txt`
+## venv
+### windows
+cd .\venv\Scripts\activate
+cd .\venv\Scripts\deactivate
+
+
